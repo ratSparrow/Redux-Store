@@ -9,13 +9,13 @@ const DECREMENT = 'decrement'
 // action creators
 const increment = (value) =>{
     return {
-        type:'increment',
+        type:INCREMENT,
         payload: value
     }
 }
 const decrement = (value) =>{
     return {
-        type:'decrement',
+        type:DECREMENT,
         payload: value
     }
 }
@@ -26,13 +26,13 @@ const initialState = {
 }
 
 const counterReducer = (state=initialState, action)=>{
-    if (action.type === 'increment'){
+    if (action.type === INCREMENT){
         return {
             ...state,
             value:state.value+action.payload
         }
     }
-    else if(action.type === 'decrement'){
+    else if(action.type === DECREMENT){
         return {
             ...state,
             value:state.value-action.payload
