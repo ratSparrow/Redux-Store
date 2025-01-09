@@ -5,6 +5,7 @@ import './App.css'
 import Counter from './components/Counter'
 import store from './redux/store'
 import HooksCounter from './components/HooksCounter'
+import DynamicHooksCounter from './components/DynamicHooksCounter'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <div className="max-w-md mx-auto mt-10 space-y-5">
           {/* <Counter /> */}
           <HooksCounter/>
+          <DynamicHooksCounter/>
 
         </div>
       </div>
