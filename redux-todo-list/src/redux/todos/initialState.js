@@ -1,12 +1,12 @@
 export const initialState =[
     {
         id:1,
-        name:"React JS Task",
+        name:"Learn React JS Task",
         completed:true
     },
     {
         id:1,
-        name:"Next JS Task",
+        name:"Learn Next JS Task",
         completed:false
     },
 ]
