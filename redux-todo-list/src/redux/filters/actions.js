@@ -6,12 +6,12 @@ export const statusChnaged = (status) =>{
         payload:status
     }
 }
-export const colorChanged = (color, status) =>{
+export const colorChanged = (color, changeType) =>{
     return {
         type:COLORCHANGED,
         payload:{
             color,
-            status
+            changeType
         }
     }
 }
