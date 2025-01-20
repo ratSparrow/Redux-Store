@@ -1,6 +1,7 @@
 import { ADDED, ALLCOMPLETED, CLEARCOMPLETED, COLORSELECTED, DELETED, TOGGLED } from "./actionTypes";
 import { initialState } from "./initialState";
 
+
 const findMaxTodoId = (todo) => {
     const maxTodoId = todo.reduce((maxId, todo) => Math.max(todo.id, maxId), -1)
     return maxTodoId + 1
@@ -50,7 +51,7 @@ const todoReducer = (state = initialState, action) => {
             return state.filter(todo => !todo.completed)
 
         default:
-            break;
+            return state
     }
 }
 

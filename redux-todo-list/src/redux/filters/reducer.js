@@ -25,12 +25,15 @@ const filterReducer = (state = initialState, action) => {
                         colors: state.colors.map(existingColor => existingColor !== color)
 
                     }
+                  
 
             }
-
-
+            break;
+        default:
+            return state
 
     }
+
 }
 
 export default filterReducer
