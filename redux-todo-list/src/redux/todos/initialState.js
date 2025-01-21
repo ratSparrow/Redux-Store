@@ -5,8 +5,9 @@ export const initialState =[
         completed:true
     },
     {
-        id:1,
+        id:2,
         name:"Learn Next JS Task",
-        completed:false
+        completed:false,
+        color:'red'
     },
 ]

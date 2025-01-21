@@ -6,13 +6,10 @@ export const added = (todos) =>{
         payload:todos
     }
 }
-export const toggled = (todos, todoId) =>{
+export const toggled = (todoId) =>{
     return {
         type:TOGGLED,
-        payload:{
-            todoId,
-            todos
-        }
+        payload:todoId
     }
 }
 

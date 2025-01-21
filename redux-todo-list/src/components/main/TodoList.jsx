@@ -2,20 +2,18 @@ import { useSelector } from "react-redux"
 import Todo from "./Todo"
 
 const TodoList = () => {
-  const todos = useSelector(state=>state.todos)
-  console.log(todos)
+  const todos = useSelector(state => state.todos)
+  // console.log(todos)
   return (
-    <div
-    className="mt-2 text-gray-700 text-sm max-h-[300px] overflow-y-auto"
->
-   
-    
-    {
-      todos.map((todo, index)=><Todo key={index}/>)
-    }
+    <div className="mt-2 text-gray-700 text-sm max-h-[300px] overflow-y-auto">
 
-   
-</div>
+
+      {
+        todos.map((todo, index) => <Todo todo={todo} key={index} />)
+      }
+
+
+    </div>
   )
 }
 
