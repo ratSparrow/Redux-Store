@@ -13,7 +13,9 @@ const todoReducer = (state = initialState, action) => {
             return [
                 ...state,
                 {
-                    id: findMaxTodoId(action.payload)
+                    id: findMaxTodoId(action.payload),
+                    name:action.payload,
+                    completed:false
                 }
             ]
         case TOGGLED:
